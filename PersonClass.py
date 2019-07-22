@@ -27,10 +27,6 @@ class Person:
     def lunch(self,dish):
         print(f"I ate {dish} in lunch")
 
-rizul = Person("Rizul",21,"noida")
-rizul.intro()
-rizul.walk(10)
-rizul.play(3)
-rizul.lunch("roti")
+
 
 
