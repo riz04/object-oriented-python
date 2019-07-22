@@ -26,13 +26,20 @@ class Student(PersonClass.Person):
     def study(self,hours):
         print(f"I study for {hours} hours")
 
+    # student has to give presentation
+    def presentation(self, topic):
+        print('Going to present---')
+        self.intro()
+        print(f'I am going to talk about "{topic}""')
+
 student_one = Student("Ram", 13, "Noida", "DAV", "5th")
 student_one.intro()
 
-student_two = Student("Rizul", 12, "Delhi", "New Stepping Stone", "6th")
-student_two.intro()
-student_two.walk(5)
-student_two.play(1)
-student_two.study(8)
-student_two.lunch("Coke", "2:30 pm")
+rizul = Student("Rizul", 12, "Delhi", "New Stepping Stone", "6th")
+rizul.intro()
+rizul.walk(5)
+rizul.play(1)
+rizul.study(8)
+rizul.lunch("Coke", "2:30 pm")
+rizul.presentation('How can we re-use coke')
 
